@@ -1,1 +1,238 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midda - Empower to act</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <!-- HEADER -->
+  <header>
+    <div class="logo-container">
+      <img src="https://fiorettileerling.online/logo.png" alt="Midda logo" onclick="showHome()">
+    </div>
+    <nav>
+      <a onclick="showHome()">Home</a>
+      <a onclick="showHome('knelpunten')">Uw bedrijfsuitdagingen</a>
+      <a onclick="showHome('diensten')">Onze expertises</a>
+      <a onclick="showHome('resultaten')">Resultaten</a>
+      <a onclick="showProfile()">Persoonlijk profiel</a>
+      <a onclick="showContact()">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HOME PAGINA -->
+  <div id="home-page">
+    <!-- HERO BANNER -->
+    <section class="hero">
+      <h2>MIDDA</h2>
+      <p>Empower to act</p>
+      <button class="cta-button" onclick="document.getElementById('diensten').scrollIntoView({behavior: 'smooth'})">
+        Ontdek hoe wij uw organisatie helpen
+      </button>
+    </section>
+
+    <!-- QUOTES VAN TEVREDEN KLANTEN -->
+    <section class="quotes-section">
+      <div class="container">
+        <h2 class="section-title">Wat opdrachtgevers zeggen</h2>
+        <div class="quotes-grid">
+          <div class="quote-card">
+            <p class="quote-text">"Dankzij de sturing van Midda werken onze afdelingen eindelijk écht samen. Waar processen voorheen vastliepen, sturen we nu op duidelijke resultaten."</p>
+            <p class="quote-author">— Fleur Jansen - Commercieel directeur Heineken</p>
+          </div>
+          <div class="quote-card">
+            <p class="quote-text">"Martin brengt niet alleen een helder advies, maar zorgt ook voor draagvlak in de hele organisatie. De investering heeft zich dubbel en dwars terugverdiend."</p>
+            <p class="quote-author">— Remco Boxsem - Manager processen ASN Bank</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UW BEDRIJFSUITDAGINGEN -->
+    <section class="problems-section" id="knelpunten">
+      <div class="container">
+        <h2 class="section-title">Uw bedrijfsuitdagingen</h2>
+        <p class="section-subtitle">Herkenbare organisatie-uitdagingen binnen uw organisatie.</p>
+      
+        <div class="problems-grid">
+          <div class="problem-card">
+            <div class="problem-tag">Uitdaging 1</div>
+            <h3>Afdelingen werken niet goed samen</h3>
+            <p>Eilandjescultuur en gebrekkige communicatie tussen afdelingen zorgen voor vertraging en fouten.</p>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-tag">Uitdaging 2</div>
+            <h3>Procesgericht werken is niet vanzelfsprekend</h3>
+            <p>Medewerkers werken volgens oude patronen waardoor klantbediening te lang duurt en de efficiëntie achterblijft.</p>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-tag">Uitdaging 3</div>
+            <h3>Strategie wordt geen werkelijkheid</h3>
+            <p>Mooie plannen op papier, maar gebrek aan daadkracht en sturing om veranderingen daadwerkelijk door te voeren.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ONZE EXPERTISES -->
+    <div class="services-container" id="diensten">
+      <h2 class="section-title">Onze expertises</h2>
+      <p class="section-subtitle">Doelgerichte diensten die aansluiten op uw vraagstuk.</p>
+    
+      <div class="services-grid">
+        <div class="service-card" onclick="showDetail('Verandermanagement')">
+          <h4>1. Verandermanagement</h4>
+          <p>Professionele begeleiding bij complexe organisatorische transities.</p>
+        </div>
+        <div class="service-card" onclick="showDetail('Bedrijfs- & procesconsultancy')">
+          <h4>2. Bedrijfs- & procesconsultancy</h4>
+          <p>Advies voor de inrichting en optimalisatie van processen.</p>
+        </div>
+        <div class="service-card" onclick="showDetail('Programmamanagement')">
+          <h4>3. Programmamanagement</h4>
+          <p>Doelgerichte sturing en realisatie van uw belangrijkste programma's.</p>
+        </div>
+        <div class="service-card" onclick="showDetail('Training, opleiding en leiderschap')">
+          <h4>4. Training, opleiding en leiderschap</h4>
+          <p>Versterking van leiderschap en procesgericht werken en continu verbeteren binnen operationele teams.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESULTATEN & POSITIEVE BUSINESSCASE -->
+    <section class="results-section" id="resultaten">
+      <div class="container">
+        <h2 class="section-title">Positieve businesscase & resultaten</h2>
+        <p class="section-subtitle">Wat kost het en wat levert het u concreet op?</p>
+
+        <div class="results-grid">
+          <div class="result-card">
+            <h3>Snellere klantbediening</h3>
+            <p>Kortere doorlooptijden in uw bedrijfsprocessen en direct hogere klanttevredenheid.</p>
+          </div>
+          <div class="result-card">
+            <h3>Duidelijke sturing</h3>
+            <p>Geen vage adviezen, maar concrete doelen en strakke opvolging binnen programma's.</p>
+          </div>
+          <div class="result-card">
+            <h3>Rendement op investering</h3>
+            <p>Een positieve businesscase: de efficiencywinst en kwaliteitsverbetering verdienen de consultancy-kosten ruimschoots terug.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- PERSOONLIJK PROFIEL PAGINA -->
+  <div id="profile-page">
+    <div class="profile-page-header">
+      <h1>Persoonlijk profiel</h1>
+      <img src="https://fiorettileerling.online/logo.png" alt="Midda logo" class="profile-logo">
+    </div>
+    
+    <div class="profile-detail-card">
+      <div class="profile-header-block">
+        <img src="https://fiorettileerling.online/profielfoto.png" alt="Martin Kortekaas" class="profile-avatar-img">
+        <div>
+          <h2>Martin Kortekaas</h2>
+          <p class="profile-subtitle">Eigenaar & senior consultant Midda</p>
+        </div>
+      </div>
+
+      <div class="profile-body">
+        <section class="profile-block">
+          <h3>Over mij</h3>
+          <p>
+            Ik ben een menselijke verbinder die rustig, stabiel, optimistisch, energiek en loyaal is. Ik ben zelfkritisch en gedreven om mijzelf continu te ontwikkelen. Verder ben ik iemand die op een serieuze en evenwichtige wijze vorm geeft aan taken en verantwoordelijkheden. Ik kies in mijn handelen voor een doordachte aanpak en ik ben doel- en resultaatgericht.
+          </p>
+        </section>
+
+        <section class="profile-block">
+          <h3>Doelstelling</h3>
+          <p>
+            Organisaties naar een hoger niveau brengen door veranderingen en verbeteringen te implementeren. Ik geloof daarbij in een strakke discipline van een LEAN-cultuur. In mijn vak wil ik altijd doelgericht en resultaatgericht handelen met oog voor de klant en de interne medewerker.
+          </p>
+        </section>
+
+        <section class="profile-block">
+          <h3>Persoonlijke passie & drive</h3>
+          <p>Organisatieontwikkeling en mensontwikkeling.</p>
+        </section>
+
+        <section class="profile-block">
+          <h3>Kernwoorden</h3>
+          <div class="keywords-grid">
+            <span class="keyword-tag">Procesmanagement</span>
+            <span class="keyword-tag">LEAN</span>
+            <span class="keyword-tag">Agile</span>
+            <span class="keyword-tag">Projectmanagement</span>
+            <span class="keyword-tag">Verandermanagement</span>
+            <span class="keyword-tag">Manager</span>
+            <span class="keyword-tag">Coachen en begeleiden</span>
+            <span class="keyword-tag">Projectleider</span>
+            <span class="keyword-tag">Verandermanager</span>
+            <span class="keyword-tag">Commercieel en klantgedreven</span>
+            <span class="keyword-tag">Maatschappelijk betrokken</span>
+            <span class="keyword-tag">Doelgericht en resultaatgericht</span>
+            <span class="keyword-tag">Leiderschap</span>
+          </div>
+        </section>
+      </div>
+
+      <button class="back-btn" onclick="showHome()">Terug naar homepagina</button>
+    </div>
+  </div>
+
+  <!-- DETAIL PAGINA -->
+  <div id="detail-page">
+    <h1 id="service-title">Dienstnaam</h1>
+    <p>Welkom op de pagina voor <strong id="service-title-bold">Dienstnaam</strong>. Hier kunt u alle specifieke informatie, methodieken en klantervaringen toevoegen die bij deze expertise horen.</p>
+    <button class="back-btn" onclick="showHome()">Terug naar home-pagina</button>
+  </div>
+
+  <!-- CONTACT PAGINA -->
+  <div id="contact-page">
+    <h1>Contact opnemen</h1>
+    <p class="contact-intro">Neem gerust contact met ons op voor vragen, advies of een vrijblijvend kennismakingsgesprek.</p>
+    <div class="contact-grid">
+      <div class="contact-card-item">
+        <strong>Contactpersoon</strong>
+        <p><strong>Martin Kortekaas</strong></p>
+      </div>
+
+      <div class="contact-card-item">
+        <strong>Adres</strong>
+        <p>Johan Zoutmanstraat 34<br>2161 TR Lisse, Zuid-Holland<br>Nederland</p>
+      </div>
+
+      <div class="contact-card-item">
+        <strong>E-mailadres</strong>
+        <p><a href="mailto:martin.kortekaas@midda.nl">martin.kortekaas@midda.nl</a></p>
+      </div>
+
+      <div class="contact-card-item">
+        <strong>Telefoonnummer</strong>
+        <p><a href="tel:+31622391578">+31 (0)6 22 39 15 78</a></p>
+      </div>
+    </div>
+
+    <button class="back-btn" onclick="showHome()">Terug naar home-pagina</button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <h2>Midda</h2>
+    <p>Johan Zoutmanstraat 34 | Lisse, Zuid-Holland 2161 TR, NL</p>
+    <p>&copy; 2026 Midda - Alle rechten voorbehouden.</p>
+  </footer>
+
+  <!-- JAVASCRIPT BESTANDEN -->
+  <script src="app.js"></script>
+  <script src="tests.js"></script>
+</body>
+</html>
