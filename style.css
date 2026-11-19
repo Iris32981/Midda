@@ -126,7 +126,6 @@ nav a:hover { color: var(--midda-oranje); }
   border-bottom: 2px solid var(--midda-achtergrond);
 }
 .profile-page-header h1 { font-size: 28px; color: var(--midda-donkerblauw); margin: 0; }
-.profile-logo { height: 50px; object-fit: contain; }
 
 .profile-detail-card { display: flex; flex-direction: column; gap: 20px; }
 .profile-header-block {
