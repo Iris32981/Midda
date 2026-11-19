@@ -158,22 +158,6 @@ nav a:hover { color: var(--midda-oranje); }
 }
 .profile-block p { color: var(--tekst-grijs); font-size: 1em; line-height: 1.6; margin: 0; }
 
-.keywords-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 8px;
-}
-.keyword-tag {
-  background-color: var(--midda-achtergrond);
-  color: var(--midda-donkerblauw);
-  border: 1px solid var(--midda-lichtblauw);
-  padding: 5px 12px;
-  border-radius: 20px;
-  font-size: 0.85em;
-  font-weight: 600;
-}
-
 /* QUOTES VAN KLANTEN */
 .quotes-section { padding: 30px 20px; background-color: var(--midda-achtergrond); }
 .quotes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }

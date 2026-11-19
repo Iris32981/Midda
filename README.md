@@ -8,7 +8,7 @@ Dit project is oorspronkelijk opgezet als een prototype in Google Apps Script en
 De website presenteert de consultancy-diensten van Midda (Martin Kortekaas), inclusief:
 - **Homepagina**: Introductie, klantquotes, herkenbare bedrijfsuitdagingen, expertises en resultaten.
 - **Detailpagina**: Specifieke weergave per gekozen expertise (dynamisch ingeladen via JavaScript).
-- **Persoonlijk profiel**: Achtergrondinformatie, doelstellingen en kernwaarden van Martin Kortekaas.
+- **Persoonlijk profiel**: Achtergrondinformatie, doelstellingen en passie van Martin Kortekaas.
 - **Contactpagina**: Directe contactgegevens en adresinformatie.
 
 ## Bestandsstructuur
