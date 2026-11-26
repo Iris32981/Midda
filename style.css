@@ -104,7 +104,7 @@ nav a:hover { color: var(--midda-oranje); }
 .logos-track {
   display: flex;
   width: max-content;
-  animation: scrollLogos 24s linear infinite;
+  animation: scrollLogos 30s linear infinite;
 }
 
 .logos-marquee:hover .logos-track {
@@ -289,3 +289,4 @@ nav a:hover { color: var(--midda-oranje); }
 footer { background-color: #15293d; color: var(--midda-wit); text-align: center; padding: 25px 20px; border-top: 4px solid var(--midda-oranje); }
 footer h2 { margin-top: 0; color: var(--midda-oranje); font-size: 1.4em; }
 footer p { margin: 5px 0; font-size: 0.9em; color: #cbd5e1; }
+
